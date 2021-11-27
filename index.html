@@ -57,7 +57,8 @@
         const cakeMaterail3 = new THREE.MeshBasicMaterial({map: cakeTexture3});
         const cakeMaterail4 = new THREE.MeshBasicMaterial({map: cakeTexture4});
 
-        const pinkMaterial = new THREE.MeshBasicMaterial({color: 'pink'});
+        // const pinkMaterial = new THREE.MeshBasicMaterial({color: '#5CC9F5'});
+        const pinkMaterial = new THREE.MeshBasicMaterial({color: '#C1E3F1'});
 
         const cakeGeometry1 = new THREE.CylinderBufferGeometry(100, 100, 70, 40);
         const cakePart1 = new THREE.Mesh(cakeGeometry1, [cakeMaterail1, pinkMaterial, pinkMaterial]);
@@ -88,7 +89,7 @@
                 bevelEnabled: true,
                 bevelSize: 10,
             });
-            const textMaterial = ['white', 'red'].map(color => new THREE.MeshBasicMaterial({color}));
+            const textMaterial = ['#f97d00', '#5ccaf5'].map(color => new THREE.MeshBasicMaterial({color}));
 
             const text = new THREE.Mesh(textGeometry, textMaterial);
             text.translateY(90)
